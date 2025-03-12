@@ -17,6 +17,17 @@ header {
     text-align: center;
 }
 
+figcaption{
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+
+}
+.firstword{
+    font-family:cursive;
+    font-size:25px;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -37,6 +48,10 @@ header {
     text-decoration: none;
     margin-left: 20px;
 }
+.navbar-link:hover {
+    color: yellowgreen; /* Color of your choice on hover */
+    transition: color 0.3s ease; /* Optional: smooth transition */
+}
 
 .container {
     margin: 20px auto;
@@ -46,6 +61,9 @@ header {
 
 .content figure {
     margin: 0; /* Remove default margins */
+}
+.date {
+    font-weight: bolder;
 }
 
 .content img {
@@ -114,7 +132,17 @@ footer a {
 
 @media (max-width: 600px) {
     .navbar-links {
-        flex-direction: column; /* Stack links on small screens */
-        align-items: flex-start; /* Align links to the left */
+        flex-direction: row; /* Stack links on small screens */
+        align-items: flex-start;
+        
     }
+    figcaption{
+        font-family: 'Arial', sans-serif;
+        line-height: 1.0;
+        margin: 20px;
+        padding: 0;
+
+    
+    }
+    
 }
